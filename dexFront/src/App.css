@@ -17,6 +17,20 @@ header {
   padding-right: 20px;
 }
 
+.logoText {
+  font-family: Inter, "Segoe UI", Roboto, -apple-system, system-ui, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding-right: 16px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #5981F3 0%, #A2D1FF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 .eth{
   width: 20px;
   height: 20px;

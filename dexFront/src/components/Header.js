@@ -1,16 +1,15 @@
 import React from "react";
-import Logo from "../moralis-logo.svg";
-import Eth from "../eth.svg";
+import ScrollLogo from "../Scroll.png";
 import { Link } from "react-router-dom";
 
 function Header(props) {
 
-  const {address, isConnected, connect} = props;
+  const { address, isConnected, connect } = props;
 
   return (
     <header>
       <div className="leftH">
-        <img src={Logo} alt="logo" className="logo" />
+        <div className="logoText">DExTER</div>
         <Link to="/" className="link">
           <div className="headerItem">Swap</div>
         </Link>
@@ -20,11 +19,11 @@ function Header(props) {
       </div>
       <div className="rightH">
         <div className="headerItem">
-          <img src={Eth} alt="eth" className="eth" />
-          Ethereum
+          <img src={ScrollLogo} alt="scroll" className="eth" />
+          Scroll
         </div>
         <div className="connectButton" onClick={connect}>
-          {isConnected ? (address.slice(0,4) +"..." +address.slice(38)) : "Connect"}
+          {isConnected ? (address.slice(0, 4) + "..." + address.slice(38)) : "Connect"}
         </div>
       </div>
     </header>
